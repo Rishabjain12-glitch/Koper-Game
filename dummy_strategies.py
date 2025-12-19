@@ -384,8 +384,8 @@ class DummyStrategy5:
 """Change here the variable YourStrategyName with your team name"""
 
 try:
-    from mystrat import YourStrategyName
-    strategyA = YourStrategyName()
+    from mystrat import Gamblers
+    strategyA = Gamblers()
 except ImportError:
     strategyA = DummyStrategy1()
 
@@ -411,4 +411,5 @@ try:
     from mystrat import Strategy5 as ParticipantStrategyE
     strategyE = ParticipantStrategyE()
 except ImportError:
+
     strategyE = DummyStrategy5()
